@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<form id="create_question" class="wrapper" onsubmit="{{ func }};">
+    <div class="user-id" style="display: none;">1</div>
+    <div class="question-id" style="display: none;">{{ question_id }}</div>
+    <div class="header">
+        <h2>Question Type One</h2>
+        <h3>Type out some code or a paragraph and press 'Add blank' to add a blank. The blank will be inserted where your caret is or at the end if theres no caret. You can then select how many marks each input is worth.</h3>
+    </div>
+    
+    <div class="input">
+        <input type="text" class="question-input" cols="95" placeholder="Question" required>
+        <textarea class="text-input" rows="20" cols="95" placeholder="Input code or text here" required></textarea>
+    </div>
+
+    <div class="blank-answers"></div>
+    
+    <div class="buttons">
+        <div class="difficulty-dropdown">
+            <label for="difficulty">Difficulty out of 10: </label>
+            <select name="difficulty" id="difficulty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+
+        <p>Marks: <a id="marks">0</a></p>
+
+        <div class="module-dropdown">
+            <label for="module">Module: </label>
+            <select name="module" id="module"></select>
+        </div>
+        
+        <button id="add" type="button">Add blank</button>
+
+        <button id="save" type="submit">Save</button>
+    </div>
+    
+    <div class="comments">
+        <h3>Input feedback and feedforward for the students</h3>
+        <input type="text" class="feedback" cols="95" placeholder="Added feedback for students that get the question wrong" required>
+        <input type="text" class="feedforward" cols="95" placeholder="Added feedforward for students that get the question right" required>
+    </div>
+</form>
+
+
+<script type="text/javascript" src="{{url_for('static', filename='question_one/create_question_one.js')}}"></script>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='/styles/question_one.css') }}">
+{% endblock %}

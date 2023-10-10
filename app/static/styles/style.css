@@ -1,0 +1,9 @@
+* {
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.errorcode {
+    font-size: 15vw;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}

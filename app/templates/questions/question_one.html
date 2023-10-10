@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<div id="{{ question_id }}" class="question-one-insert"></div>
+
+
+<script type="text/javascript" src="{{url_for('static', filename='question_one/question_one.js')}}"></script>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='/styles/question_one.css') }}">
+{% endblock %}

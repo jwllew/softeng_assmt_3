@@ -1,0 +1,210 @@
+/*.wrapper {
+    display: grid;
+    position: relative;
+    grid-template-columns: 800px;
+    grid-template-rows: 170px 430px;
+    width: 800px;
+    padding: 10px;
+    border: 2px  solid #aaa;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: 800px;
+    grid-template-rows: 30px 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blank-answers {
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    justify-content: space-around;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #aaa;
+    color: white;
+}
+
+.error {
+    position: absolute;
+    top: 10px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    border: solid 2px black;
+    color: black;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    transition: 0.3s all;
+}
+
+.remove-error {
+    cursor: pointer;
+}
+
+.remove-error:hover {
+    color: white;
+}
+
+.question-format {
+    position: relative;
+    width: 800px;
+    padding: 10px;
+    border: 2px  solid #aaa;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.result {
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 0 5px
+}
+
+.right {
+    border: solid 2px darkgreen;
+    background-color: green;
+    color: white;
+}
+
+.wrong {
+    border: solid 2px darkred;
+    background-color: red;
+    color: black;
+}
+
+.submitted{
+    border: solid 2px darkgrey;
+    background-color: grey;
+    color: black;
+}
+
+.correct-ans {
+    border: solid 2px darkkhaki;
+    background-color: yellow;
+    color: black;
+}
+
+.remove-blank {
+    cursor: pointer;
+    font-size: 25px;
+    padding-left: 3px;
+}
+
+.remove-blank:hover {
+    color: orange;
+}
+
+.blank-input {
+    width: 190px;
+}
+
+.blank-mark-input {
+    width: 30px;
+}*/
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.save_button {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.remove-blank {
+    cursor: pointer;
+    font-size: 25px;
+    padding-left: 3px;
+}
+
+.remove-blank:hover {
+    color: orange;
+}
+
+.result {
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 0 5px
+}
+
+.right {
+    border: solid 2px darkgreen;
+    background-color: green;
+    color: white;
+}
+
+.wrong {
+    border: solid 2px darkred;
+    background-color: red;
+    color: black;
+}
+
+.submitted{
+    border: solid 2px darkgrey;
+    background-color: grey;
+    color: black;
+}
+
+.correct-ans {
+    border: solid 2px darkkhaki;
+    background-color: yellow;
+    color: black;
+}
+
+.popup {
+    position: absolute;
+    top: 10px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    border: solid 2px black;
+    color: black;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    transition: 0.3s all;
+}
+
+.error {
+    background-color: red;
+}
+
+.delete_question {
+    background-color: white;
+}
+
+.remove-error {
+    cursor: pointer;
+}
+
+.remove-error:hover {
+    color: white;
+}
